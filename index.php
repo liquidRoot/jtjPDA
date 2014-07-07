@@ -1,6 +1,7 @@
 <?php
-    include "add/header.php";
+include "add/header.php";
 ?>
+
 
 <article>
     <header>
@@ -21,11 +22,17 @@
     </footer>
 </article>
 
+<div id="mensagem"></div>
+
 <aside>
-    <h3>aside</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
+    <form id="logging" action="files/logando.php" method="post">
+        <input type="text"      id="nick"   placeholder="Digite o seu Login"/>
+        <input type="password"  id="pass"   placeholder="Digite a sua Senha"/>
+        <input type="button"    id="submit" value="Entrar"/>
+    </form>
 </aside>
 
+
 <?php
-    include "add/footer.php";
+include "add/footer.php";
 ?>
